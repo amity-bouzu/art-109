@@ -1,0 +1,116 @@
+/* CSS resets */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* respect user font size preferences */
+
+html {
+    font-size: 100%;
+}
+
+/* General CSS */
+
+body {
+    background-color: #d9f3f3;
+    font-family: serif;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+header {
+    padding: 4rem;
+    /* background-color:#d4deeb; */
+    background: #020024;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    margin-bottom: 4rem;
+    text-align: center;
+    color: #ffffff;
+    border-bottom: #000 5px solid;
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+nav {
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color:white; 
+    margin: 0 1 rem;
+    display: inline-block;
+}
+
+main {}
+
+.about-section,
+.portfolio-section,
+.contact-section {
+    margin-bottom: 4rem;
+}
+
+.about-content,
+.portfolio-content,
+.contact-content {
+    max-width: 60rem;
+    margin: 2rem auto;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.about-content h2,
+.portfolio-content h2,
+.contact-content h2 {
+    padding: 2rem 0;
+}
+
+.portfolio-item {
+    margin-bottom: 5rem;
+    background-color: #ffffff;
+    padding: 4rem;
+    border-radius: 0.5rem;
+    box-shadow: 10px 10px 5px #759eab1a;
+    border: 2px #000 solid;
+    /* border-style: solid;
+    border-color: #d2db21 #8787c1 #00da80 #d31996;  */
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+    border-radius: 0.5rem;
+}
+
+.portfolio-item h3 {
+    margin: 1rem 0;
+}
+
+.portfolio-item p {
+    font-size: 1.5rem;
+}
+
+.about-section {
+    background-color: aliceblue;
+}
+
+.portfolio-section {
+    /* background-color:azure; */
+}
+
+footer {
+    padding: 4rem;
+    /* background-color:#d4deeb; */
+    background: #020024;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    text-align: left;
+    color: #ffffff;
+    border-top: #000 5px solid;
+}
