@@ -36,6 +36,13 @@ body {
     font-family: "Fauna One", serif;
     font-size: 1.5rem;
     line-height: 1.5;
+    text-align: justify;
+}
+
+@media (max-width: 700px) {
+    body {
+        font-size: 1.3rem;
+    }
 }
 
 header {
@@ -46,6 +53,12 @@ header {
     text-align: center;
     color: white;
     border-bottom: #000 5px solid;
+}
+
+@media (max-width: 700px) {
+    header {
+        padding-left: 2rem;
+    }
 }
 
 header h1 {
@@ -76,7 +89,27 @@ nav a:hover{
     transform: scale(1.3);
 }
 
-main {}
+@media (max-width: 750px) {
+    nav a {
+        margin: 0 .5rem;
+    }
+}
+
+main {
+    margin: 0;
+}
+
+@media (max-width: 850px){
+    main {
+        margin: 3rem;
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        margin: 1rem;
+    }
+}
 
 .about-section,
 .portfolio-section,
@@ -108,6 +141,18 @@ main {}
     border: 2px #000 solid;
     /* border-style: solid;
     border-color: #d2db21 #8787c1 #00da80 #d31996;  */
+}
+
+@media (max-width: 800px) {
+    .portfolio-item {
+        padding: 4rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .portfolio-item {
+        padding: 3rem;
+    }
 }
 
 .portfolio-item img {
