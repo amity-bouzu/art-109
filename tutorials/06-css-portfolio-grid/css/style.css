@@ -1,0 +1,101 @@
+/* color palette */
+
+:root {
+    --bg-color-1: #d9f3f3;
+    --bg-color-2: aliceblue;
+    --font: black;
+    --font-2: white;
+    --accent-1: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    --accent-2: #134bcf;
+    --dark: #000;
+}
+
+
+/* CSS resets */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* respect user font size preferences */
+
+html {
+    font-size: 100%;
+}
+
+/* make images responses */
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* General CSS */
+
+body {
+    background-color: var(--bg-color-1);
+    color: var(--font);
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-family: "Fauna One", serif;
+}
+
+header {
+    padding: 5rem, 2rem;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-family: "Cinzel", serif;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: var(--font-2);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--font);
+    margin: 0 1rem;
+    transition: all .5s ease;
+}
+
+nav a:hover {
+    color: var(--accent-2);
+}
+
+
+.about-content,
+.portfolio-content,
+.contact-content {
+    max-width: 60rem;
+    margin: 5rem auto;
+}
+
+.about-content h2,
+.portfolio-content h2,
+.contact-content h2 {
+    margin: 2 rem, 0;
+}
+
+
+
+
+footer {
+    padding: 1rem, 2rem;
+}
+
+footer img {
+    display: inline;
+    max-width: 3rem;
+    margin: 0 0.5rem;
+}
+
+
+/* flex styling */
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
