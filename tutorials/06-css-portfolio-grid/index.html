@@ -13,12 +13,20 @@
 </head>
 
 <body>
-    <header class="flex-container">
-        <h1>Alice Rennie</h1>
-        <nav>
-            <a href="#about-section">About</a>
-            <a href="#portfolio-section">Work</a>
-            <a href="#contact-section">Contact</a>
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1>Alice Rennie</h1>
+            </div>
+            <div class="nav">
+                <button class="hamburger">☰</button>
+                <ul class="nav-menu">
+                    <li><a href="#about-section">About</a></li>
+                    <li><a href="#portfolio-section">Work</a></li>
+                    <li><a href="#contact-section">Contact</a></li>
+                </ul>
+            </div>
+
         </nav>
     </header>
     <main>
@@ -35,27 +43,51 @@
         <section class="portfolio-section" id="portfolio-section">
             <div class="portfolio-content">
                 <h2>My Work</h2>
-                <div class="portfolio-item">
-                    <img src="images/third-years.png"
-                        alt="The third-year characters from a comic I'm making with a friend.">
-                    <h3>The Third Years</h3>
-                    <p>A meme redraw of the four main third year students from a story/comic I am writing with a friend.
-                    </p>
-                </div>
-                <div class="portfolio-item">
-                    <img src="images/himemani-cover.png" alt="The tentative cover for a book I'm writing.">
-                    <h3>Princess and Mania Cover</h3>
-                    <p>The potential cover for a book I am writing.</p>
-                </div>
-                <div class="portfolio-item">
-                    <img src="images/imuru.png" alt="The Goddess of Death from a story I'm writing.">
-                    <h3>Imuru</h3>
-                    <p>Concept art of the the Goddess of Death in a story I am workshopping.</p>
-                </div>
-                <div class="portfolio-item">
-                    <img src="images/sonboy.png" alt="My son named Alya.">
-                    <h3>Son Boy Allowed</h3>
-                    <p>My son. He's allowed.</p>
+                <div class="flex-container-grid">
+                    <div class="portfolio-item flex-item-grid">
+                        <img src="images/third-years.png"
+                            alt="The third-year characters from a comic I'm making with a friend.">
+                        <h3>The Third Years</h3>
+                        <p>A meme redraw of the four main third year students from a story/comic I am writing with a
+                            friend.
+                        </p>
+                    </div>
+                    <div class="portfolio-item flex-item-grid">
+                        <img src="images/himemani-cover.png" alt="The tentative cover for a book I'm writing.">
+                        <h3>Princess and Mania Cover</h3>
+                        <p>The potential cover for a book I am writing.</p>
+                    </div>
+                    <div class="portfolio-item flex-item-grid">
+                        <img src="images/imuru.png" alt="The Goddess of Death from a story I'm writing.">
+                        <h3>Imuru</h3>
+                        <p>Concept art of the the Goddess of Death in a story I am workshopping.</p>
+                    </div>
+                    <div class="portfolio-item flex-item-grid">
+                        <img src="images/sonboy.png" alt="My son named Alya.">
+                        <h3>Son Boy Allowed</h3>
+                        <p>My son. He's allowed.</p>
+                    </div>
+                    <div class="portfolio-item flex-item-grid">
+                        <img src="images/eva.png" alt="One of the protagonists from a book I'm writing, in 3D.">
+                        <h3>Eva</h3>
+                        <p>One of the protagonists from a book I'm writing, in 3D chibi form.
+                        </p>
+                    </div>
+                    <div class="portfolio-item flex-item-grid">
+                        <img src="images/chime.png" alt="Sprite I made for a game.">
+                        <h3>Chime Protag</h3>
+                        <p>A sprite I made for a game.</p>
+                    </div>
+                    <div class="portfolio-item flex-item-grid">
+                        <img src="images/russian-still.png" alt="Frame from an animation I made.">
+                        <h3>Hello, How Are You?</h3>
+                        <p>Frame from a quick rotoscoping animation I made.</p>
+                    </div>
+                    <div class="portfolio-item flex-item-grid">
+                        <img src="images/bouzu.png" alt="This is me, but upside-down.">
+                        <h3>Me</h3>
+                        <p>My avatar, upside-down.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -74,6 +106,7 @@
             <a href="#"><img src="images/icon-logo-youtube.png" alt="Youtube"></a>
         </div>
     </footer>
+    <script src="js/hamburger.js"></script>
 </body>
 
 </html>
