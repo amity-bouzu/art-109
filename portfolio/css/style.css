@@ -213,6 +213,7 @@ main {
 
 .portfolio-item img {
     border-radius: 0.5rem;
+    max-height: 35rem;
 }
 
 footer {
