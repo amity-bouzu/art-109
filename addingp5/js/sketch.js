@@ -2,7 +2,7 @@
 let canvas;
 let img;
 let xPos = 0;
-let yPox = 0;
+let yPos = 0;
 let easing = .01;
 
 
