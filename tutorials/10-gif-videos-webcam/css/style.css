@@ -1,0 +1,19 @@
+
+.babynodding {
+    position: absolute; 
+    top: 10px;
+    left: 30px;
+}
+
+.zelda-text-div {
+    position: relative;
+    margin: 50px auto;
+    max-width: 600px;
+    font-size: 3rem;
+}
+
+.babylooking {
+    position: absolute;
+    top: 40px;
+    left: 50px;
+}

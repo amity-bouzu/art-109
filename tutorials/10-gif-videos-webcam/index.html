@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎬</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main>
+        <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/A5AV5HAKjh0?si=0iebS0mxezDczzfJ&autoplay=1&mute=1&loop=1"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <img src="media/babynodding.gif" alt="Link is nodding at you." class="babynodding">
+        <div class="zelda-text-div">
+            <p>A sword wields no strength unless the hand that holds it has courage. A sword wields no strength unless
+                the hand that holds it has courage. A sword wields no strength unless the hand that holds it has
+                courage.</p>
+            <img src="media/helooking.gif" alt="Link is looking at you." class="babylooking">
+        </div>
+        <!-- autoplay video -->
+        <video autoplay muted loop>
+            <source src="media/oot-trailer-1.mp4" type="video/mp4">
+        </video>
+        <!-- hover videos -->
+        <video class="hover-video" muted loop>
+            <source src="media/oot-trailer-1.mp4" type="video/mp4">
+        </video>
+        <video class="hover-video" muted loop>
+            <source src="media/oot-trailer-1.mp4" type="video/mp4">
+        </video>
+        <!-- click on play video -->
+        <video class="click-video" muted loop>
+            <source src="media/oot-trailer-1.mp4" type="video/mp4">
+        </video>
+
+        <video id="webcam" autoplay playsinline></video>
+    </main>
+
+    <script src="js/video.js"></script>
+    <script src="js/webcam.js"></script>
+</body>
+
+</html>
