@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#111412">
+    <title>Afterhours — a creative community</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="app-shell">
+        <aside class="left-rail" aria-label="Main navigation">
+            <a class="wordmark" href="#top" aria-label="Afterhours home">
+                <span class="brand-mark" aria-hidden="true">a</span>
+                <span>afterhours</span>
+            </a>
+
+            <nav class="primary-nav">
+                <a class="nav-link active" href="#feed" aria-current="page">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z"/></svg>
+                    <span>Home</span>
+                </a>
+                <a class="nav-link" href="#discover">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+                    <span>Discover</span>
+                </a>
+                <a class="nav-link" href="#inbox">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4z"/><path d="m4 7 8 6 8-6"/></svg>
+                    <span>Inbox</span>
+                    <span class="nav-count">3</span>
+                </a>
+                <a class="nav-link" href="#saved">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4h12v17l-6-4-6 4z"/></svg>
+                    <span>Saved</span>
+                </a>
+            </nav>
+
+            <div class="rail-bottom">
+                <button class="profile-link" type="button">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=96&h=96&q=80" alt="">
+                    <span class="profile-copy"><strong>Jamie Rivera</strong><small>@jamierivera</small></span>
+                    <span class="more-dots" aria-hidden="true">•••</span>
+                </button>
+                <p class="rail-note">Make room for good work.</p>
+            </div>
+        </aside>
+
+        <main class="feed-column" id="top">
+            <header class="mobile-header">
+                <a class="wordmark" href="#top"><span class="brand-mark" aria-hidden="true">a</span><span>afterhours</span></a>
+                <button class="icon-button" type="button" aria-label="Open inbox">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4z"/><path d="m4 7 8 6 8-6"/></svg>
+                </button>
+            </header>
+
+            <div class="feed-heading" id="feed">
+                <div>
+                    <p class="eyebrow">THURSDAY, NOVEMBER 27</p>
+                    <h1>Your corner of the internet<span>.</span></h1>
+                </div>
+                <button class="icon-button search-toggle" type="button" aria-label="Focus search">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+                </button>
+            </div>
+
+            <form class="composer" id="composer">
+                <img class="avatar" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=96&h=96&q=80" alt="">
+                <label class="visually-hidden" for="post-text">Share something with the community</label>
+                <input id="post-text" name="post" type="text" placeholder="What are you making space for?" maxlength="240" aria-describedby="composer-status" required disabled>
+                <button class="compose-submit" type="submit" aria-label="Publish post" disabled>
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </button>
+            </form>
+            <p class="composer-status" id="composer-status" role="status" aria-live="polite"></p>
+
+            <div class="feed-controls">
+                <div class="feed-tabs" role="tablist" aria-label="Feed order">
+                    <button class="feed-tab selected" type="button" role="tab" aria-selected="true" data-filter="all">For you</button>
+                    <button class="feed-tab" type="button" role="tab" aria-selected="false" data-filter="following">Following</button>
+                </div>
+                <button class="sort-button" type="button" aria-label="Sort newest first">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M7 12h10m-7 5h4"/></svg>
+                    <span>Latest</span>
+                </button>
+            </div>
+
+            <section class="post-list" aria-label="Community feed" aria-live="polite">
+                <article class="post" data-following="true">
+                    <div class="post-topline">
+                        <img class="avatar" src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=96&h=96&q=80" alt="">
+                        <div class="author-line"><strong>Nia Okafor</strong><span class="verified" aria-label="Verified">✳</span><span>@nia.makes</span><span class="post-dot">·</span><time datetime="2026-11-27T09:42">2h</time></div>
+                        <button class="post-menu" type="button" aria-label="More options for Nia's post">•••</button>
+                    </div>
+                    <p class="post-copy">Mosslight / 08</p>
+                    <figure class="post-media landscape">
+                        <img src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=1400&q=85" alt="Sunlit creative workspace with a desk, plants, and sketchbooks" loading="lazy">
+                        <figcaption>studio notes / no. 08</figcaption>
+                    </figure>
+                    <div class="post-actions">
+                        <button class="action-button like-button" type="button" aria-label="Like Nia's post" aria-pressed="false" data-count="128">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 8.7c0 5.2-8.8 10-8.8 10s-8.8-4.8-8.8-10a4.7 4.7 0 0 1 8.8-2.2 4.7 4.7 0 0 1 8.8 2.2Z"/></svg><span class="action-count">128</span>
+                        </button>
+                        <button class="action-button" type="button" aria-label="View 14 replies"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11.5a7.5 7.5 0 0 1-7.5 7.5H5l1.5-3A7.5 7.5 0 1 1 20 11.5Z"/></svg><span>14</span></button>
+                        <button class="action-button share-button" type="button" aria-label="Share post"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16V4m-5 5 5-5 5 5M5 14v5h14v-5"/></svg></button>
+                        <button class="action-button bookmark-button" type="button" aria-label="Save post" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4h12v17l-6-4-6 4z"/></svg></button>
+                    </div>
+                </article>
+
+                <article class="post" data-following="false">
+                    <div class="post-topline">
+                        <img class="avatar" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=96&h=96&q=80" alt="">
+                        <div class="author-line"><strong>Leo Park</strong><span>@leopark.jpg</span><span class="post-dot">·</span><time datetime="2026-11-27T08:18">3h</time></div>
+                        <button class="post-menu" type="button" aria-label="More options for Leo's post">•••</button>
+                    </div>
+                    <p class="post-copy">Hyrule / nocturne 01</p>
+                    <figure class="post-media portrait link-art">
+                        <img src="../../addingp5/images/bluelink.png" alt="Hylian swordsman, shield raised" loading="lazy">
+                        <figcaption>Hyrule / nocturne 01</figcaption>
+                    </figure>
+                    <div class="post-actions">
+                        <button class="action-button like-button" type="button" aria-label="Like Leo's post" aria-pressed="false" data-count="86"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 8.7c0 5.2-8.8 10-8.8 10s-8.8-4.8-8.8-10a4.7 4.7 0 0 1 8.8-2.2 4.7 4.7 0 0 1 8.8 2.2Z"/></svg><span class="action-count">86</span></button>
+                        <button class="action-button" type="button" aria-label="View 9 replies"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11.5a7.5 7.5 0 0 1-7.5 7.5H5l1.5-3A7.5 7.5 0 1 1 20 11.5Z"/></svg><span>9</span></button>
+                        <button class="action-button share-button" type="button" aria-label="Share post"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16V4m-5 5 5-5 5 5M5 14v5h14v-5"/></svg></button>
+                        <button class="action-button bookmark-button" type="button" aria-label="Save post" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4h12v17l-6-4-6 4z"/></svg></button>
+                    </div>
+                </article>
+            </section>
+            <p class="feed-end">You’re all caught up <span aria-hidden="true">✳</span></p>
+        </main>
+
+        <aside class="right-rail" aria-label="Discover">
+            <form class="search-box" id="search-form" role="search">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+                <label class="visually-hidden" for="site-search">Search the community</label>
+                <input id="site-search" type="search" placeholder="Search the community">
+                <kbd>/</kbd>
+            </form>
+
+            <section class="side-section" id="discover">
+                <div class="section-heading"><h2>In the mix</h2><span class="live-dot" aria-label="Trending now"></span></div>
+                <a class="trend-item" href="#creativecoding"><span class="trend-number">01</span><span><small>MAKING WAVES</small><strong>#creativecoding</strong><small>2.4k posts</small></span><span class="trend-arrow">↗</span></a>
+                <a class="trend-item" href="#slowstudio"><span class="trend-number">02</span><span><small>ON EVERYONE’S MIND</small><strong>#slowstudio</strong><small>986 posts</small></span><span class="trend-arrow">↗</span></a>
+                <a class="trend-item" href="#colorstudy"><span class="trend-number">03</span><span><small>FRESH THREAD</small><strong>#colorstudy</strong><small>421 posts</small></span><span class="trend-arrow">↗</span></a>
+                <a class="text-link" href="#all-trends">See what’s happening <span aria-hidden="true">→</span></a>
+            </section>
+
+            <section class="side-section people-section">
+                <div class="section-heading"><h2>Good people</h2><a href="#all-people">All</a></div>
+                <div class="person-row"><img class="avatar" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=96&h=96&q=80" alt=""><span class="person-copy"><strong>Amara Wells</strong><small>Illustrator · Oakland</small></span><button class="follow-button" type="button" aria-pressed="false">Follow</button></div>
+                <div class="person-row"><img class="avatar" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=96&h=96&q=80" alt=""><span class="person-copy"><strong>Jules Tanaka</strong><small>Photographer · Tokyo</small></span><button class="follow-button" type="button" aria-pressed="false">Follow</button></div>
+                <div class="person-row"><img class="avatar" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=96&h=96&q=80&sat=-35" alt=""><span class="person-copy"><strong>Rae Williams</strong><small>Designer · Brooklyn</small></span><button class="follow-button" type="button" aria-pressed="false">Follow</button></div>
+            </section>
+
+            <footer class="site-footer"><a href="#about">About</a><a href="#guidelines">Guidelines</a><a href="#privacy">Privacy</a><span>© 2026 Afterhours</span></footer>
+        </aside>
+    </div>
+    <nav class="mobile-nav" aria-label="Mobile navigation">
+        <a class="mobile-nav-link active" href="#feed" aria-label="Home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z"/></svg></a>
+        <a class="mobile-nav-link" href="#discover" aria-label="Discover"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg></a>
+        <button class="mobile-compose" type="button" aria-label="Write a post"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+        <a class="mobile-nav-link" href="#inbox" aria-label="Inbox"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4z"/><path d="m4 7 8 6 8-6"/></svg></a>
+        <a class="mobile-nav-link" href="#profile" aria-label="Your profile"><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=96&h=96&q=80" alt=""></a>
+    </nav>
+    <script src="js/main.js"></script>
+</body>
+</html>
